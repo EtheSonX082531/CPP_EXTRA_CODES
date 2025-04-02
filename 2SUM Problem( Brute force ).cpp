@@ -15,17 +15,17 @@ int main()
     }
     cout << "Enter the 2 sum value:" << endl;
     cin>>sum;
-    for(int i=0; i<n; i++) {
-        int j=0;
-        while(j<n && j!=i) {
+    for(int i=0; i<n-1; i++) {
+        int j=i+1;
+        while(j<n) {
             if(v[i]+v[j]==sum) {
-                cout<<"2SUM elements found!"<<endl;
-                cout<<"indices: "<<"( "<<i<<","<<j<<" )"<<endl;
+                cout<<"2SUM elements are found!"<<endl;
+                cout<<"indices: "<<"( "<<(i+1)<<","<<(j+1)<<" )"<<endl;
                 return 0;
             }
             j++;
         }
     }
-    cout << "2SUM elements not found!" << endl;
+    cout << "2SUM elements are not found!" << endl;
     return 0;
 }
