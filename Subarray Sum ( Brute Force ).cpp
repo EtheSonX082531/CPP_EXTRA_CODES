@@ -17,12 +17,10 @@ int main()
     cout << "Enter the Sub_array sum value:" << endl;
     cin>>sum;
     for(int i=0; i<n; i++) {
+        int temp_sum=0;
         for(int j=i; j<n; j++) {
-            int temp_sum=0;
-            for(int k=i; k<=j; k++) {
-                temp_sum=temp_sum+v[k];
-            }
-            if(temp_sum==sum) {
+            temp_sum=temp_sum+v[j];
+              if(temp_sum==sum) {
                 count++;
             }
         }
