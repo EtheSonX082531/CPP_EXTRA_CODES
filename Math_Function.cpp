@@ -1,6 +1,5 @@
 #include<bits/stdc++.h>
 using namespace std;
-#define fastIO() ios::sync_with_stdio(0); cin.tie(0);
 
 
 void isPrime() {
@@ -204,7 +203,6 @@ void eulerTotient() {
 
 int main()
 {
-    fastIO();
     int click=1;
     while(click) {
         cout << "\nSelect Operation:" << endl;
