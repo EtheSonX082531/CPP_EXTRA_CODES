@@ -19,7 +19,8 @@ int main()
     cin>>a>>b;
     if(a>b) {
         swap(a,b);
-    } //Longest Common Multiple
+    }
+    //Least Common Multiple
     cout << "LCM is:" << endl;
     cout<<(a*b)/GCD(a,b);
     return 0;
